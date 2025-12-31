@@ -3,11 +3,8 @@
 # ADSSQLite
 A SQLite engine, database, and interface contained in a single PowerShell file using NTFS Alternate Data Streams.
 
-> ⚠️  **WARNING**  
-> The contents of this repository is for educational purposes only. It should not be considered production-ready, best-practice, etc.
-> You should fully understand code before you run it on your system, and you should have authorization to run code on your system.
-> The contents of this repository *may* trigger endpoint protection and antivirus, though the contents as published to this repository
-> are not malicious.
+> ⚠️  **WARNING**:
+> This is for educational purposes only. It should not be considered production-ready, best-practice, etc. You should fully understand code before you run it on your system, and you should have authorization to run code on your system. The contents of this post and associated repository may trigger endpoint protection and antivirus, though the contents as published are not malicious. This little experiment uses SQLite, which is not affliated with me nor this project, and can be obtained from their [website](https://sqlite.org/index.html).
 
   
 ## Getting Started
