@@ -1,7 +1,7 @@
+![](/images/ADSSQLite-NoBg-128x128.png)  
+  
 # ADSSQLite
 A SQLite engine, database, and interface contained in a single PowerShell file using NTFS Alternate Data Streams.
-
-![](/images/ADSSQLite-NoBg-128x128.png)
 
 > ⚠️  **WARNING**  
 > The contents of this repository is for educational purposes only. It should not be considered production-ready, best-practice, etc.
@@ -9,6 +9,7 @@ A SQLite engine, database, and interface contained in a single PowerShell file u
 > The contents of this repository *may* trigger endpoint protection and antivirus, though the contents as published to this repository
 > are not malicious.
 
+  
 ## Getting Started
   1. Download `build.ps1`
   2. Update `$exePath` to reflect the location of your sqlite3.exe binary
