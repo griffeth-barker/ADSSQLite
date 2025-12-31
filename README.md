@@ -5,7 +5,7 @@ A SQLite engine, database, and interface contained in a single PowerShell file u
 
 > ⚠️  **WARNING**  
 > The contents of this repository is for educational purposes only. It should not be considered production-ready, best-practice, etc.
-> You should fully understand code before you run it in your system, and you should have authorization to run code on your system.
+> You should fully understand code before you run it on your system, and you should have authorization to run code on your system.
 > The contents of this repository *may* trigger endpoint protection and antivirus, though the contents as published to this repository
 > are not malicious.
 
@@ -58,14 +58,14 @@ Once the script runs in a session, the Win32Ghost .NET type is stored in the Pow
 ### Ephemeral Artifacts
 When you strike Enter on a -Query command, the following artifacts appear. They are deleted when the query finishes.
 
-**Temporary Engine** (`$env:TEMP\sqlite_\[GUID\].exe`):
+**Temporary Engine** (`$env:TEMP\sqlite_[GUID].exe`):
 A unique, randomly named executable. This is the binary that handles the SQL logic. It only lives for the duration of the Invoke-SQLiteQuery function.
 
-**Session Database** (`$env:TEMP\db_\[GUID\].db`):
-A temporary working copy of your database. SQLite requires a physical file to perform locking and writes. We extract the binary data from the ADS to this file, modify it, and then push the results back to the ADS.
+**Session Database** (`$env:TEMP\db_[GUID].db`):
+A temporary working copy of the database. SQLite requires a physical file to perform locking and writes. We extract the binary data from the ADS to this file, modify it, and then push the results back to the ADS.
 
 ##### Sub-Processes
-If you check Task Manager or Get-Process at the exact right millisecond, you will see a process named `sqlite_\[GUID\].exe` running as a child of your PowerShell host.
+If you check Task Manager or Get-Process at the exact right millisecond, you will see a process named `sqlite_[GUID].exe` running as a child of the PowerShell host.
 
 #### System Processes & Events
 Beyond just files, the system registers the following activities:  
